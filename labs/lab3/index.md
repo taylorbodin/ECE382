@@ -175,12 +175,12 @@ Complete the table below.  To answer this question you will have to use some com
 
 | Symbolic Constant | Hex | Function |
 | :-: | :-: | :-: |
-|#STE2007_RESET| | |
-|#STE2007_DISPLAYALLPOINTSOFF| | |
-|#STE2007_POWERCONTROL| | | 
-|#STE2007_POWERCTRL_ALL_ON | | |
-|#STE2007_DISPLAYNORMAL | | |
-|#STE2007_DISPLAYON | | |
+|#STE2007_RESET| E2 | Internal reset |
+|#STE2007_DISPLAYALLPOINTSOFF| A5 | LCD doesn't display all points |
+|#STE2007_POWERCONTROL| 28 | Booster, Voltage Regulator and Follower all OFF | 
+|#STE2007_POWERCTRL_ALL_ON | 2F | Booster, Voltage Regulator and Follower all ON |
+|#STE2007_DISPLAYNORMAL | A6 | LCD doesn't reverse the display |
+|#STE2007_DISPLAYON | AE | Turns the display on |
 
 (This marks the end of the Mega Prelab.)
 ---------------------------------------------------------------
