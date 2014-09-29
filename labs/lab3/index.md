@@ -11,7 +11,7 @@ Look at the schematic for the Nokia1202 LCD BoosterPack. Complete the following 
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-:   | :-:   | :-:  | :-:  | :-:   | :-:   |
 | GND  |  20   | POWER|      |       |       |
-| RST  |  8    | OUT  |  1   |   0   |   0   |
+| RST  |  8    | OUT  |  1   |   0   |   1   |
 | P1.4 |  6    | OUT  |  1   |   0   |   1   |   
 | MOSI |  15   | OUT  |  1   |   0   |   1   |   
 | SCLK |  7    | OUT  |  1   |   0   |   1   |   
@@ -53,7 +53,7 @@ The following initializes the SPI subsystem of the MSP430.  For each of the bits
 | UCMST | 1  | The MSP430 is the Master device |
 | UCSYNCH| 1 | Sychronous mode is enabled |
 | UCSSEL_2| 1X | We're using the SMCLK |
-| UCSWRST| 0 | USCI reset releaded for operation |
+| UCSWRST| 0 | USCI reset disabled for operation |
 
 ### Communicate to the Nokia1202 display
 The following code communicates one byte to the Nokia 1202 display using its 9-bit protocol.  Use this code to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.  Make sure that you clearly show the relationship of the edges in the clk and data waveforms.
