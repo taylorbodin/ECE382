@@ -48,11 +48,11 @@ The following initializes the SPI subsystem of the MSP430.  For each of the bits
 
 | ID | Bit | Function as set in the code |
 |:-:|:-:|:-:|
-| UCCKPH | 1 | Data sampled on rising edge and set on falling |
-| UCMSB | 0  | LSB first |
-| UCMST | 1  | The MSP430 is the Master device |
-| UCSYNCH| 1 | Sychronous mode is enabled |
-| UCSSEL_2| 1X | We're using the SMCLK |
+| UCCKPH | 7 | Data sampled on rising edge and set on falling |
+| UCMSB | 5  | LSB first |
+| UCMST | 3  | The MSP430 is the Master device |
+| UCSYNCH| 0 | Sychronous mode is enabled |
+| UCSSEL_2| 7-6 | We're using the SMCLK |
 | UCSWRST| 0 | USCI reset disabled for operation |
 
 ### Communicate to the Nokia1202 display
@@ -176,7 +176,7 @@ Complete the table below.  To answer this question you will have to use some com
 | Symbolic Constant | Hex | Function |
 | :-: | :-: | :-: |
 |#STE2007_RESET| E2 | Internal reset |
-|#STE2007_DISPLAYALLPOINTSOFF| A5 | LCD doesn't display all points |
+|#STE2007_DISPLAYALLPOINTSOFF| A4 | LCD doesn't display all points |
 |#STE2007_POWERCONTROL| 28 | Booster, Voltage Regulator and Follower all OFF | 
 |#STE2007_POWERCTRL_ALL_ON | 2F | Booster, Voltage Regulator and Follower all ON |
 |#STE2007_DISPLAYNORMAL | A6 | LCD doesn't reverse the display |
