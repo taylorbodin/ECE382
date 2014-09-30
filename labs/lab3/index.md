@@ -16,10 +16,10 @@ Look at the schematic for the Nokia1202 LCD BoosterPack. Complete the following 
 | MOSI |  15   | OUT  |  1   |   0   |   1   |   
 | SCLK |  7    | OUT  |  1   |   0   |   1   |   
 | VCC  |  1    | POWER|      |       |       |  
-| S1   |  9    | IN   |  0   |   1   |   1   | 
-| S2   |  10   | IN   |  0   |   1   |   1   | 
-| S3   |  11   | IN   |  0   |   1   |   1   | 
-| S4   |  12   | IN   |  0   |   1   |   1   | 
+| S1   |  9    | IN   |  0   |   0   |   0   | 
+| S2   |  10   | IN   |  0   |   0   |   0   | 
+| S3   |  11   | IN   |  0   |   0   |   0   | 
+| S4   |  12   | IN   |  0   |   0   |   0   | 
 
 
 ### Configure the MSP430
